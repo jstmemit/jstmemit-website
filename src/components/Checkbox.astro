@@ -1,0 +1,13 @@
+---
+import checkbox from '@/assets/icons/checkbox.svg';
+import { Image } from 'astro:assets';
+
+const { label } = Astro.props;
+---
+
+<li class="flex items-center gap-2 ">
+    <Image class="pt-1" src={checkbox} alt="checkbox" />
+    <label class="text-md md:text-lg">
+        {label}
+    </label>
+</li>

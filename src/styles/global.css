@@ -6,6 +6,12 @@
 
 @theme {
     --font-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
+
+    --color-magenta-500: #FF4473;
+
+    --color-gray-subtext: #DFDFDF;
+    --color-gray-paragraph: #A3A3A3;
+    --color-gray-highlight: #DADADA;
 }
 
 @theme inline {
@@ -124,6 +130,6 @@
     }
 }
 
-.home-gradient {
+.hero-gradient {
     background: linear-gradient(67deg, #480B1D 0%, #000 27.14%, #000 79.04%, #042B3F 99.54%);
 }
