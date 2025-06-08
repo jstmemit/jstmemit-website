@@ -1,7 +1,5 @@
 ---
 import { Button } from "@/components/ui/button"
-import discord from "@/assets/icons/discord.svg";
-import github from "@/assets/icons/github.svg";
 import { Image } from 'astro:assets';
 import CheckboxGroup from "../components/CheckboxGroup.astro";
 
@@ -25,12 +23,8 @@ const { checkboxes } = content;
         <p class="text-gray-paragraph text-md w-[80vw] md:text-lg tracking-wide">Discord bot that makes memes about whatever you're chatting about.</p>
         <CheckboxGroup checkboxes={checkboxes} />
         <div class="flex flex-wrap gap-4 justify-center mt-4">
-            <Button variant="discord">
-                <Image src={discord} alt="discord" /> Add to Discord
-            </Button>
-            <Button variant="github">
-                <Image src={github} alt="discord" /> View on GitHub
-            </Button>
+            <Button variant="discord" />
+            <Button variant="github" />
         </div>
     </div>
 </section>
