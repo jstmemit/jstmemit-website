@@ -1,13 +1,42 @@
 ---
-
 import Checkbox from "../components/Checkbox.astro";---
 
-<section class="hero-gradient w-full min-h-[70vh] flex flex-col items-center justify-center text-center gap-5 antialiased">
-    <h1 class="uppercase tracking-tighter text-3xl md:text-7xl font-bold">Get jokes about <br/><span class="text-magenta-500">your</span> community</h1>
-    <p class="text-gray-paragraph text-md w-[80vw] md:text-lg tracking-wide">Discord bot that makes memes about whatever you're chatting about.</p>
-    <ul class="flex flex-wrap w-[80vw] md:flex-row gap-x-4 gap-y-2 justify-center md:gap-12 text-left">
-        <Checkbox label="Easy to setup" />
-        <Checkbox label="Multilanguage" />
-        <Checkbox label="Open Source" />
-    </ul>
+<section class="hero-gradient relative w-full min-h-[70vh] flex flex-col items-center justify-center text-center gap-5 antialiased">
+    <div class="absolute inset-0 opacity-30 pointer-events-none grid-bg"></div>
+    <div class="absolute inset-0 pointer-events-none bg-gradient-radial-mask"></div>
+
+    <div class="relative z-10 flex flex-col items-center gap-5">
+        <h1 class="uppercase tracking-tighter text-3xl md:text-7xl font-bold">Get jokes about <br/><span class="text-magenta-500">your</span> community</h1>
+        <p class="text-gray-paragraph text-md w-[80vw] md:text-lg tracking-wide">Discord bot that makes memes about whatever you're chatting about.</p>
+        <ul class="flex flex-wrap w-[80vw] md:flex-row gap-x-4 gap-y-2 justify-center md:gap-12 text-left">
+            <Checkbox label="Easy to setup" />
+            <Checkbox label="Multilanguage" />
+            <Checkbox label="Open Source" />
+        </ul>
+    </div>
 </section>
+
+<style>
+    .grid-bg {
+        background-size: 40px 40px;
+        background-image:
+                linear-gradient(to right, #e4e4e7 1px, transparent 1px),
+                linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+    }
+
+    .bg-gradient-radial-mask {
+        background: radial-gradient(ellipse at center, transparent 20%, rgba(0, 0, 0, 0.1));
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .grid-bg {
+            background-image:
+                    linear-gradient(to right, #262626 1px, transparent 1px),
+                    linear-gradient(to bottom, #262626 1px, transparent 1px);
+        }
+
+        .bg-gradient-radial-mask {
+            background: radial-gradient(ellipse at center, transparent 20%, rgba(255, 255, 255, 0.1));
+        }
+    }
+</style>
