@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css"
-import Navbar from "../components/Navbar.astro";
 
 const { title } = Astro.props
 ---
@@ -13,11 +12,8 @@ const { title } = Astro.props
         <meta name="robots" content="noindex, nofollow" />
         <title>{title}</title>
     </head>
-    <body>
-        <header>
-            <Navbar/>
-        </header>
-        <main class="text-white">
+    <body class="bg-linear-to-r from-black-200 to-magma-100 text-white font-jakarta-sans antialiased px-4 md:px-0">
+        <main class="flex flex-col items-center pt-16 pb-16 md:pt-32 md:pb-32 min-h-screen max-w-2xl mx-auto w-full gap-16 md:gap-24">
             <slot />
         </main>
     </body>
