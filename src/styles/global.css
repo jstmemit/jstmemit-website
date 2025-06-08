@@ -133,3 +133,7 @@
 .hero-gradient {
     background: linear-gradient(67deg, #480B1D 0%, #000 27.14%, #000 79.04%, #042B3F 99.54%);
 }
+
+.content-gradient {
+    background: linear-gradient(93deg, rgba(64, 10, 26, 0.20) 0%, rgba(0, 0, 0, 0.20) 99.47%), #161619;
+}

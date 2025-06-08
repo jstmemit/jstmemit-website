@@ -1,8 +1,12 @@
 ---
-import HomeLayout from "../layouts/HomeLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../sections/HeroSection.astro";
+import ContentLayout from "../layouts/ContentLayout.astro";
 ---
 
-<HomeLayout title="jstmemit">
+<BaseLayout title="jstmemit">
 	<HeroSection />
-</HomeLayout>
+	<ContentLayout>
+
+	</ContentLayout>
+</BaseLayout>

@@ -1,6 +1,5 @@
 ---
 import { Button } from "@/components/ui/button"
-import { Image } from 'astro:assets';
 import CheckboxGroup from "../components/CheckboxGroup.astro";
 
 const content = {
@@ -8,10 +7,14 @@ const content = {
         { label: "Easy to setup" },
         { label: "Multilanguage" },
         { label: "Open Source" }
-    ]
+    ],
+    links: {
+        discord: "https://canary.discord.com/oauth2/authorize?client_id=1375836467745783990",
+        github: "https://github.com/jstmemit"
+    }
 }
 
-const { checkboxes } = content;
+const { checkboxes, links } = content;
 ---
 
 <section class="hero-gradient relative w-full min-h-[70vh] flex flex-col items-center justify-center text-center gap-5 antialiased">
@@ -23,8 +26,12 @@ const { checkboxes } = content;
         <p class="text-gray-paragraph text-md w-[80vw] md:text-lg tracking-wide">Discord bot that makes memes about whatever you're chatting about.</p>
         <CheckboxGroup checkboxes={checkboxes} />
         <div class="flex flex-wrap gap-4 justify-center mt-4">
-            <Button variant="discord" />
-            <Button variant="github" />
+            <a href={links.discord} target="_blank" rel="noopener noreferrer">
+                <Button variant="discord" />
+            </a>
+            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                <Button variant="github" />
+            </a>
         </div>
     </div>
 </section>
