@@ -1,0 +1,152 @@
+---
+import ContentLayout from "../layouts/ContentLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout>
+    <ContentLayout>
+        <section class="flex flex-col pt-16 w-full gap-8">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold uppercase w-full text-center">Privacy Policy</h1>
+            <h2 class="text-lg font-medium">Last updated: June 8th, 2025</h2>
+
+            <ul class="flex flex-col gap-8">
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">1. Our commitment to your privacy</h2>
+                    <p>At Jstmemit (also known as "Just Meme It"), we genuinely care about your privacy. This policy explains how our website (<a class="text-magenta-500" href="https://jstmemit.com">https://jstmemit.com</a>) and Bot handle your data. By using our service, you're agreeing to this policy and our <a class="text-magenta-500" href="/terms">Terms of Service</a>.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">2. We don't collect training data by default</h2>
+                    <p>Here's the important part: <strong>our Bot doesn't collect any data when you first add it to your server.</strong> It's completely privacy-friendly out of the box. The Bot only starts collecting training data when someone with the right permissions explicitly turns on this feature for a specific text channel.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">3. What we collect</h2>
+                    <p>When bot is enabled in a channel, we collect:</p>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Message content without any way to identify who wrote it</p>
+                        </li>
+                        <li>
+                            <p>b. Channel IDs so we know which conversations belong to which channel</p>
+                        </li>
+                        <li>
+                            <p>c. Links to images from Discord (not the actual images themselves), but only when channel has opted-in to enable user image meme generation</p>
+                        </li>
+                    </ol>
+                    <p>Also we collect analytics of our website usage, this includes:</p>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Your user agent</p>
+                        </li>
+                        <li>
+                            <p>b. Your IP address</p>
+                        </li>
+                        <li>
+                            <p>c. Technical data related to website errors and performance metrics</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">4. What we never collect</h2>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Usernames</p>
+                        </li>
+                        <li>
+                            <p>b. Profile pictures or avatars</p>
+                        </li>
+                        <li>
+                            <p>c. Server names or member information</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">5. How the opt-in system works</h2>
+                    <p>We believe in clear consent, so here's how it works:</p>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Only server admins or people with the right permissions can turn on data collection</p>
+                        </li>
+                        <li>
+                            <p>b. It has to be enabled separately for each channel where you want the Bot to work</p>
+                        </li>
+                        <li>
+                            <p>c. You can turn it off anytime, and the Bot will stop collecting new data immediately</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">6. Why we collect this data</h2>
+                    <p>We use collected message data to train our Bot for your channel, so it can generate memes based on the conversations happening there. Data is never shared across channels or servers.</p>
+                    <p>If a channel has explicitly opted into using user sent images for meme generation, then images that were sent 23 hours prior to the moment of generating the meme message could be used as a meme template aswell.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">7. How long we keep data</h2>
+                    <p>You're in control of data retention:</p>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Server admins can set how long we keep training data for their channels</p>
+                        </li>
+                        <li>
+                            <p>b. Stored image links are automatically erased after 23 hours have passed</p>
+                        </li>
+                        <li>
+                            <p>c. You can change these settings or delete all data for your channel whenever you want</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">8. Your control options</h2>
+                    <p>Server administrators have full control and can:</p>
+                    <ol class="flex flex-col gap-4">
+                        <li>
+                            <p>a. Delete all stored data for their channel instantly</p>
+                        </li>
+                        <li>
+                            <p>b. Choose whether the Bot can use image links for meme generation</p>
+                        </li>
+                        <li>
+                            <p>c. Turn data collection on or off</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">9. Data security</h2>
+                    <p>We take reasonable steps to protect the data we collect. All data is stored on the territory of the European Union. We use secure servers to keep your data safe. However, no method of transmission over the internet or electronic storage is 100% secure, so we can't guarantee absolute security.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">10. Third-party services</h2>
+                    <p>We use third-party services to help us run our Bot and website. Currently we use PostHog for error alerts, anomaly detection and analytics.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">11. GDPR</h2>
+                    <p>Even though we only collect anonymized data, we know privacy laws are important. We operate under legitimate interest (providing services). If you have concerns about your privacy rights, just reach out to us.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">12. Changes to this policy</h2>
+                    <p>If we need to update this policy, we'll post the new changes here. Using our service after changes means you're okay with the updated policy.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">13. Questions or concerns</h2>
+                    <p>Jstmemit is run by <a class="text-magenta-500" href="https://wideunits.nl">Wide Units</a>, a business registered in the Netherlands. If you have any questions about privacy or how we handle data, feel free to contact us at <a class="text-magenta-500" href="mailto:legal@wideunits.nl">legal@wideunits.nl</a>.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">14. Governing law</h2>
+                    <p>This policy follows Dutch law and EU data protection rules.</p>
+                </li>
+            </ul>
+
+        </section>
+    </ContentLayout>
+</BaseLayout>

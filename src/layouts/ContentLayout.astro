@@ -2,6 +2,8 @@
 import "../styles/global.css"
 ---
 
-<section class="content-gradient relative w-full flex flex-col items-center gap-5 antialiased">
-    <slot/>
+<section class="content-gradient relative w-full flex flex-col items-center gap-5 antialiased min-h-[100vh]">
+    <div class="flex flex-col p-8 px-0 md:p-16 w-full max-w-[80vw] md:max-w-6xl gap-8">
+        <slot/>
+    </div>
 </section>
