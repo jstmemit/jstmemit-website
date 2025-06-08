@@ -1,18 +1,37 @@
 ---
-import Checkbox from "../components/Checkbox.astro";---
+import { Button } from "@/components/ui/button"
+import discord from "@/assets/icons/discord.svg";
+import github from "@/assets/icons/github.svg";
+import { Image } from 'astro:assets';
+import CheckboxGroup from "../components/CheckboxGroup.astro";
+
+const content = {
+    checkboxes: [
+        { label: "Easy to setup" },
+        { label: "Multilanguage" },
+        { label: "Open Source" }
+    ]
+}
+
+const { checkboxes } = content;
+---
 
 <section class="hero-gradient relative w-full min-h-[70vh] flex flex-col items-center justify-center text-center gap-5 antialiased">
     <div class="absolute inset-0 opacity-30 pointer-events-none grid-bg"></div>
     <div class="absolute inset-0 pointer-events-none bg-gradient-radial-mask"></div>
 
-    <div class="relative z-10 flex flex-col items-center gap-5">
+    <div class="relative flex flex-col items-center gap-5">
         <h1 class="uppercase tracking-tighter text-3xl md:text-7xl font-bold">Get jokes about <br/><span class="text-magenta-500">your</span> community</h1>
         <p class="text-gray-paragraph text-md w-[80vw] md:text-lg tracking-wide">Discord bot that makes memes about whatever you're chatting about.</p>
-        <ul class="flex flex-wrap w-[80vw] md:flex-row gap-x-4 gap-y-2 justify-center md:gap-12 text-left">
-            <Checkbox label="Easy to setup" />
-            <Checkbox label="Multilanguage" />
-            <Checkbox label="Open Source" />
-        </ul>
+        <CheckboxGroup checkboxes={checkboxes} />
+        <div class="flex flex-wrap gap-4 justify-center mt-4">
+            <Button variant="discord">
+                <Image src={discord} alt="discord" /> Add to Discord
+            </Button>
+            <Button variant="github">
+                <Image src={github} alt="discord" /> View on GitHub
+            </Button>
+        </div>
     </div>
 </section>
 
@@ -36,7 +55,7 @@ import Checkbox from "../components/Checkbox.astro";---
         }
 
         .bg-gradient-radial-mask {
-            background: radial-gradient(ellipse at center, transparent 20%, rgba(255, 255, 255, 0.1));
+            background: radial-gradient(ellipse at center, transparent 50%, rgba(255, 255, 255, 0.04));
         }
     }
 </style>
