@@ -1,0 +1,51 @@
+---
+import { Badge } from "@/components/ui/badge"
+
+import settings from "@/assets/images/settings.webp"
+import language from "@/assets/icons/language.svg"
+import template from "@/assets/icons/template.svg"
+import dataretention from "@/assets/icons/dataretention.svg"
+
+import { Image } from "astro:assets"
+---
+
+<section class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+    <div class="flex flex-col gap-4">
+        <h2 class="text-3xl md:text-5xl font-bold">CUSTOMIZE YOUR <br><span class="text-magenta-500">EXPERIENCE</span></h2>
+        <p class="text-gray-paragraph text-xl leading-9">
+            <span>Control every setting per channel. Silence</span><br class="hidden md:block">
+            <Badge variant="channel">💬 serious</Badge> <span>but unleash chaos in </span><Badge variant="channel">🤪 shitpost</Badge>
+        </p>
+        <ul class="flex flex-col gap-3">
+           <li class="flex flex-row gap-4 items-start md:items-center">
+               <div class="bg-magenta-500 w-[50px] h-[50px] rounded-[20%] flex items-center justify-center mt-2 md:mt-0">
+                   <Image class="select-none w-[25px] h-[25px] pointer-events-none" src={language} alt="Language" />
+               </div>
+               <div class="w-[90%]">
+                     <h3 class="text-xl font-bold">Language</h3>
+                     <p class="text-gray-paragraph text-md">Choose in what language you will receive alerts and memes</p>
+               </div>
+           </li>
+            <li class="flex flex-row gap-4 items-start md:items-center">
+                <div class="bg-magenta-500 w-[50px] h-[50px] rounded-[20%] flex items-center justify-center mt-2 md:mt-0">
+                    <Image class="select-none w-[25px] h-[25px] pointer-events-none" src={template} alt="Picture illustration" />
+                </div>
+                <div class="w-[90%]">
+                    <h3 class="text-xl font-bold">Templates</h3>
+                    <p class="text-gray-paragraph text-md">Pick what types of memes do you want to see in your chat</p>
+                </div>
+            </li>
+            <li class="flex flex-row gap-4 items-start md:items-center">
+                <div class="bg-magenta-500 w-[50px] h-[50px] rounded-[20%] flex items-center justify-center mt-2 md:mt-0">
+                    <Image class="select-none w-[25px] h-[25px] pointer-events-none" src={dataretention} alt="Data retention shield" />
+                </div>
+                <div class="w-[90%]">
+                    <h3 class="text-xl font-bold">Data Retention</h3>
+                    <p class="text-gray-paragraph text-md">Decide how long training data and images are stored</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="w-[100%] md:w-[60%]">
+        <Image class="select-none pointer-events-none" src={settings} alt="Settings command menu on desktop" /></div>
+</section>

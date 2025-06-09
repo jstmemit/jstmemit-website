@@ -9,6 +9,8 @@
 
     --color-magenta-500: #FF4473;
 
+    --color-ash-gray: #202024;
+
     --color-gray-subtext: #DFDFDF;
     --color-gray-paragraph: #A3A3A3;
     --color-gray-highlight: #DADADA;
@@ -132,6 +134,20 @@
 
 .hero-gradient {
     background: linear-gradient(67deg, #480B1D 0%, #000 27.14%, #000 79.04%, #042B3F 99.54%);
+    background-size: 105% 105%;
+    animation: heroGradientAnimation 5s ease infinite;
+}
+
+@keyframes heroGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .content-gradient {
