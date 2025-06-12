@@ -16,7 +16,7 @@ export const BotStatusToggle = () => {
                         isWorking ? "bg-green-600" : "bg-red-600"
                     }`}
                 />
-                <span className="text-white">
+                <span className="text-white text-sm sm:text-md">
                     Bot is {isWorking ? "working" : "not working"} in this
                     channel!
                 </span>

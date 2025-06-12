@@ -1,0 +1,22 @@
+---
+import { Button } from "@/components/ui/button.tsx";
+
+const content = {
+    links: {
+        discord: "https://discord.com/oauth2/authorize?client_id=1375836467745783990",
+        github: "https://github.com/jstmemit"
+    }
+}
+
+const { links } = content;
+---
+
+<section class="bg-gray-background flex items-center justify-center text-center">
+    <div class="flex flex-col items-center justify-center gap-2 py-16 px-4">
+        <h2 class="text-3xl font-bold tracking-tighter">MAKE YOUR SERVER <span class="text-magenta-500">FUNNIER</span></h2>
+        <p class="text-xl font-light tracking-wide text-gray-paragraph">Just add it. Your friends will thank you.</p>
+        <a class="mt-3" href={links.discord} target="_blank" rel="noopener noreferrer">
+            <Button variant="discord" />
+        </a>
+    </div>
+</section>
