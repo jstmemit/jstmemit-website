@@ -1,0 +1,35 @@
+---
+import logo from "../assets/icons/logo.svg";
+import {Image} from "astro:assets";
+
+const currentYear = new Date().getFullYear();
+
+const content = {
+    footerLinks: [
+        { href: "/privacy", text: "Privacy Policy" },
+        { href: "/terms-of-service", text: "Terms of Service" },
+        { href: "https://discord.gg/nbAVq3cAaY", text: "Community server" }
+    ]
+}
+
+const { footerLinks } = content;
+---
+
+<section class="content-gradient relative w-full flex flex-col items-center gap-5 antialiased">
+    <div class="flex flex-col sm:flex-row justify-around items-center sm:p-8 py-6 px-0 md:p-8 md:py-12 w-full max-w-[85vw] md:max-w-7xl gap-8">
+        <a href="/">
+            <Image src={logo} alt="Logo with text Just Meme on it" class="" />
+        </a>
+        <ul class="flex flex-col md:flex-row items-center gap-4 text-gray-paragraph ">
+            {
+                footerLinks.map(link => (
+                    <li><a class="hover:text-gray-highlight transition-colors" href={link.href}>{link.text}</a></li>
+                ))
+            }
+        </ul>
+        <div class="text-center sm:text-left">
+            <p class="text-gray-paragraph text-sm">© {currentYear} jstmemit</p>
+            <p class="text-gray-paragraph text-sm">Made by <a href="https://jstmemit.com" class="text-magenta-500">Wide Units</a></p>
+        </div>
+    </div>
+</section>

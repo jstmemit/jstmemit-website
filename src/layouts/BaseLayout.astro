@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props
 ---
@@ -10,15 +11,18 @@ const { title } = Astro.props
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <title>{title}</title>
     </head>
     <body>
         <header>
-            <Navbar/>
+            <Navbar />
         </header>
         <main class="text-white">
             <slot />
         </main>
+        <footer>
+            <Footer />
+        </footer>
     </body>
 </html>
