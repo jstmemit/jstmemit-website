@@ -13,6 +13,10 @@ const badgeVariants = cva(
           "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
         channel:
           "border-transparent bg-ash-gray text-white [a&]:hover:bg-primary/90 text-lg",
+        command:
+            "border-transparent px-1.5 rounded-sm bg-command-secondary text-command-primary [a&]:hover:bg-secondary/90",
+        discordBadge:
+            "border-transparent bg-discord-primary uppercase px-2 text-discord-foreground [a&]:hover:bg-discord/90",
         secondary:
           "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
         destructive:

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.7",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-popover": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.7",
     "@types/react": "^19.1.4",
@@ -17,6 +19,7 @@
     "astro": "^5.7.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
     "lucide-react": "^0.511.0",
     "next-themes": "^0.4.6",
     "react": "^19.1.0",
