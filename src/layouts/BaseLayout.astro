@@ -53,6 +53,8 @@ const jsonLd = {
         <link rel="sitemap" href="/sitemap-index.xml" />
         <link rel="manifest" href="/site.webmanifest">
 
+        <meta name='theme-color' content="#161619">
+
         <meta name="darkreader-lock">
 
         <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -69,3 +71,13 @@ const jsonLd = {
         </footer>
     </body>
 </html>
+
+<script>
+    import posthog from 'posthog-js';
+
+    posthog.init('phc_sizrzm0R5IBSErehNBBVGZEfguYGFBiuQH8KYv43hvV', {
+        api_host:'https://eu.i.posthog.com',
+        defaults: '2025-05-24',
+        persistence: 'memory',
+    })
+</script>

@@ -37,31 +37,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                             <p>c. Links to images from Discord (not the actual images themselves), but only when channel has opted-in to enable user image meme generation</p>
                         </li>
                     </ol>
-                    <p>Also we collect analytics of our website usage, this includes:</p>
-                    <ol class="flex flex-col gap-4">
-                        <li>
-                            <p>a. Your user agent</p>
-                        </li>
-                        <li>
-                            <p>b. Your IP address</p>
-                        </li>
-                        <li>
-                            <p>c. Technical data related to website errors and performance metrics</p>
-                        </li>
-                    </ol>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">4. What we never collect</h2>
-                    <ol class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">4. We never collect things like</h2>
+                    <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
-                            <p>a. Usernames</p>
+                            <p>Usernames</p>
                         </li>
                         <li>
-                            <p>b. Profile pictures or avatars</p>
+                            <p>Profile pictures or avatars</p>
                         </li>
                         <li>
-                            <p>c. Server names or member information</p>
+                            <p>Server names or member information</p>
                         </li>
                     </ol>
                 </li>
@@ -69,15 +57,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <li class="flex flex-col gap-4">
                     <h2 class="text-lg font-medium">5. How the opt-in system works</h2>
                     <p>We believe in clear consent, so here's how it works:</p>
-                    <ol class="flex flex-col gap-4">
+                    <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
-                            <p>a. Only server admins or people with the right permissions can turn on data collection</p>
+                            <p>Only server admins or people with the right permissions can turn on data collection</p>
                         </li>
                         <li>
-                            <p>b. It has to be enabled separately for each channel where you want the Bot to work</p>
+                            <p>It has to be enabled separately for each channel where you want the Bot to work</p>
                         </li>
                         <li>
-                            <p>c. You can turn it off anytime, and the Bot will stop collecting new data immediately</p>
+                            <p>You can turn it off anytime, and the Bot will stop collecting new data immediately</p>
                         </li>
                     </ol>
                 </li>
@@ -91,15 +79,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <li class="flex flex-col gap-4">
                     <h2 class="text-lg font-medium">7. How long we keep data</h2>
                     <p>You're in control of data retention:</p>
-                    <ol class="flex flex-col gap-4">
+                    <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
-                            <p>a. Server admins can set how long we keep training data for their channels</p>
+                            <p>Server admins can set how long we keep training data for their channels</p>
                         </li>
                         <li>
-                            <p>b. Stored image links are automatically erased after 23 hours have passed</p>
+                            <p>Stored image links are automatically erased after 23 hours have passed</p>
                         </li>
                         <li>
-                            <p>c. You can change these settings or delete all data for your channel whenever you want</p>
+                            <p>You can change these settings or delete all data for your channel whenever you want</p>
                         </li>
                     </ol>
                 </li>
@@ -128,6 +116,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 <li class="flex flex-col gap-4">
                     <h2 class="text-lg font-medium">10. Third-party services</h2>
                     <p>We use third-party services to help us run our Bot and website. Currently we use PostHog for error alerts, anomaly detection and analytics.</p>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">10. Third-party services</h2>
+                    <p>
+                        We use third-party services to help us run our Discord bot and website.
+                        Currently, we use PostHog for error alerts, anomaly detection, and
+                        analytics. Here is how we use it:
+                    </p>
+                    <ul class="list-disc pl-6 flex flex-col gap-2">
+                        <li>
+                            <b>For the Discord bot:</b> We look at anonymized analytics to
+                            understand things like which settings are changed most or which meme
+                            templates are more popular based on likes & dislikes. This information is not tied to a specific user or server, only to a channel ID.
+                        </li>
+                        <li>
+                            <b>For the Website:</b> We use cookieless tracking by PostHog for our
+                            website analytics. This means we don't collect, save, or pass on any
+                            distinct personal identifiers of our visitors.
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="flex flex-col gap-4">
