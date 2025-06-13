@@ -5,8 +5,9 @@ import Footer from "../components/Footer.astro";
 
 const seo = {
     title: "Just Meme It | A Discord bot that generates memes",
+    ogTitle: "Just Meme It",
     description: "Just Meme It is a Discord bot that makes memes about whatever you're chatting about. Get good memes about your server's inside jokes and conversations.",
-    image: "https://jstmemit.com/assets/logo.png",
+    image: "https://jstmemit.com/assets/thumbnail.png",
     url: Astro.url
 }
 
@@ -35,7 +36,8 @@ const jsonLd = {
         <meta name="robots" content="index, follow" />
         <meta name="description" content={seo.description} />
 
-        <meta property="og:title" content={seo.title} />
+        <meta property="og:title" content={seo.ogTitle} />
+        <meta property="og:description" content={seo.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={seo.url} />
         <meta property="og:image" content={seo.image} />
@@ -43,7 +45,8 @@ const jsonLd = {
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="jstmemit.com">
         <meta property="twitter:url" content={seo.url}>
-        <meta name="twitter:title" content={seo.title}>
+        <meta name="twitter:description" content={seo.description}>
+        <meta name="twitter:title" content={seo.ogTitle}>
 
         <title>{seo.title}</title>
 
