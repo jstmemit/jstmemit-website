@@ -21,7 +21,11 @@ export default defineConfig({
   },
 
   site: 'https://jstmemit.com',
-  integrations: [react(), sitemap(), playformCompress(), compressor(), robotsTxt()],
+  integrations: [react(), sitemap(), playformCompress({
+    Exclude: [
+        "carousel_gif_1.gif"
+    ]
+  }), compressor(), robotsTxt()],
 
   adapter: node({
     mode: 'standalone',
