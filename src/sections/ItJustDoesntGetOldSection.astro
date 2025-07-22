@@ -26,7 +26,7 @@ const content = {
 const { advantages } = content;
 ---
 
-<section class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+<section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 md:mt-20">
     <div class="w-[100%] md:w-[60%] order-1 md:order-0">
         <Image class="select-none pointer-events-none" src={englishMemes} alt="Settings command menu" />
     </div>
@@ -35,7 +35,7 @@ const { advantages } = content;
         <p class="text-gray-paragraph text-xl leading-9">
             <span>Discussing an event? Get ready to see memes about it immediately</span>
         </p>
-        <ul class="flex flex-col gap-3">
+        <ul class="flex flex-col gap-5">
             {
                 advantages.map((advantage) => (
                         <Advantage image={advantage.icon} title={advantage.title} description={advantage.description} />

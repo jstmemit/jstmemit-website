@@ -12,7 +12,7 @@ const content = {
     advantages: [
         {
             title: "Language",
-            description: "Choose in what language you will receive alerts and memes",
+            description: "Choose in what language bot will reply",
             icon: language
         },
         {
@@ -38,7 +38,7 @@ const { advantages } = content;
             <span>Control every setting per channel. Silence</span><br class="hidden md:block">
             <Badge variant="channel">💬 serious</Badge> <span>but unleash chaos in </span><Badge variant="channel">🤪 shitpost</Badge>
         </p>
-        <ul class="flex flex-col gap-3">
+        <ul class="flex flex-col gap-5">
             {
                 advantages.map((advantage) => (
                         <Advantage image={advantage.icon} title={advantage.title} description={advantage.description} />
