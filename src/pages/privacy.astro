@@ -10,7 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <ContentLayout>
         <section class="flex flex-col pt-16 w-full gap-8">
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold uppercase w-full text-center">Privacy Policy</h1>
-            <h2 class="text-lg font-medium">Last updated: June 8th, 2025</h2>
+            <h2 class="text-lg font-medium">Last updated: August 1st, 2025</h2>
 
             <ul class="flex flex-col gap-8">
                 <li class="flex flex-col gap-4">
@@ -28,19 +28,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     <p>When bot is enabled in a channel, we collect:</p>
                     <ol class="flex flex-col gap-4">
                         <li>
-                            <p>a. Message content without any way to identify who wrote it</p>
+                            <p>a. Message content (without any way to identify who wrote it)</p>
                         </li>
                         <li>
                             <p>b. Channel IDs so we know which conversations belong to which channel</p>
                         </li>
                         <li>
-                            <p>c. Links to images from Discord (not the actual images themselves), but only when channel has opted-in to enable user image meme generation</p>
+                            <p>c. Links to images and GIFs from Discord (not the actual images themselves)</p>
                         </li>
                     </ol>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">4. We never collect things like</h2>
+                    <h2 class="text-lg font-medium">4. Temporary data storage</h2>
+                    <p>In some cases, we may temporarily store user IDs:</p>
+                    <ol class="list-disc pl-6 flex flex-col gap-4">
+                        <li>
+                            <p>When users like or dislike memes, their user ID may be stored in RAM until the bot restarts</p>
+                        </li>
+                        <li>
+                            <p>For user surveys (feedback collection), user IDs may be stored with PostHog for up to 7 years to prevent cases where one specific user can send multiple survey answers. You can always request data removal by contacting us.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="flex flex-col gap-4">
+                    <h2 class="text-lg font-medium">5. We never collect things like</h2>
                     <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
                             <p>Usernames</p>
@@ -55,11 +68,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">5. How the opt-in system works</h2>
+                    <h2 class="text-lg font-medium">6. How the opt-in system works</h2>
                     <p>We believe in clear consent, so here's how it works:</p>
                     <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
-                            <p>Only server admins or people with the right permissions can turn on data collection</p>
+                            <p>Only server admins or people with the right permissions can turn on data collection for meme generation</p>
                         </li>
                         <li>
                             <p>It has to be enabled separately for each channel where you want the Bot to work</p>
@@ -71,13 +84,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">6. Why we collect this data</h2>
+                    <h2 class="text-lg font-medium">7. Why we collect this data</h2>
                     <p>We use collected message data to train our Bot for your channel, so it can generate memes based on the conversations happening there. Data is never shared across channels or servers.</p>
-                    <p>If a channel has explicitly opted into using user sent images for meme generation, then images that were sent 23 hours prior to the moment of generating the meme message could be used as a meme template aswell.</p>
+                    <p>Images that were sent 23 hours prior to the moment of generating the meme message can be used on meme templates.</p>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">7. How long we keep data</h2>
+                    <h2 class="text-lg font-medium">8. How long we keep data</h2>
                     <p>You're in control of data retention:</p>
                     <ol class="list-disc pl-6 flex flex-col gap-4">
                         <li>
@@ -93,43 +106,34 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">8. Your control options</h2>
+                    <h2 class="text-lg font-medium">9. Your control options</h2>
                     <p>Server administrators have full control and can:</p>
                     <ol class="flex flex-col gap-4">
                         <li>
                             <p>a. Delete all stored data for their channel instantly</p>
                         </li>
                         <li>
-                            <p>b. Choose whether the Bot can use image links for meme generation</p>
-                        </li>
-                        <li>
-                            <p>c. Turn data collection on or off</p>
+                            <p>b. Turn new data collection on or off</p>
                         </li>
                     </ol>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">9. Data security</h2>
+                    <h2 class="text-lg font-medium">10. Data security</h2>
                     <p>We take reasonable steps to protect the data we collect. All data is stored on the territory of the European Union. We use secure servers to keep your data safe. However, no method of transmission over the internet or electronic storage is 100% secure, so we can't guarantee absolute security.</p>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">10. Third-party services</h2>
-                    <p>We use third-party services to help us run our Bot and website. Currently we use PostHog for error alerts, anomaly detection and analytics.</p>
-                </li>
-
-                <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">10. Third-party services</h2>
+                    <h2 class="text-lg font-medium">11. Third-party services</h2>
                     <p>
                         We use third-party services to help us run our Discord bot and website.
-                        Currently, we use PostHog for error alerts, anomaly detection, and
-                        analytics. Here is how we use it:
+                        Currently, we use PostHog for error alerts, anomaly detection, analytics, and user surveys. PostHog analytics data is stored for up to 7 years. Here is how we use it:
                     </p>
                     <ul class="list-disc pl-6 flex flex-col gap-2">
                         <li>
                             <b>For the Discord bot:</b> We look at anonymized analytics to
                             understand things like which settings are changed most or which meme
-                            templates are more popular based on likes & dislikes. This information is not tied to a specific user or server, only to a channel ID.
+                            templates are more popular based on likes & dislikes. This information is not tied to a specific user or server, only to a channel ID.<br /><br />We also conduct user feedback surveys to better understand what users think about the Bot and what features they would like to see in the future. Users are not obligated to fill them out.<br/><br />
                         </li>
                         <li>
                             <b>For the Website:</b> We use cookieless tracking by PostHog for our
@@ -140,22 +144,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">11. GDPR</h2>
-                    <p>Even though we only collect anonymized data, we know privacy laws are important. We operate under legitimate interest (providing services). If you have concerns about your privacy rights, just reach out to us.</p>
+                    <h2 class="text-lg font-medium">12. GDPR</h2>
+                    <p>We know privacy laws are important. We operate under legitimate interest (providing services). If you have concerns about your privacy rights or would like to request data removal, just contact us at our <a class="text-magenta-500" href="https://discord.gg/nbAVq3cAaY">Support</a> server or us send an email: <a class="text-magenta-500" href="mailto:legal@wideunits.nl">legal@wideunits.nl</a></p>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">12. Changes to this policy</h2>
+                    <h2 class="text-lg font-medium">13. Changes to this policy</h2>
                     <p>If we need to update this policy, we'll post the new changes here. Using our service after changes means you're okay with the updated policy.</p>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">13. Questions or concerns</h2>
+                    <h2 class="text-lg font-medium">14. Questions or concerns</h2>
                     <p>Jstmemit is run by <a class="text-magenta-500" href="https://wideunits.nl">Wide Units</a>, a business registered in the Netherlands. If you have any questions about privacy or how we handle data, feel free to contact us at <a class="text-magenta-500" href="mailto:legal@wideunits.nl">legal@wideunits.nl</a>.</p>
                 </li>
 
                 <li class="flex flex-col gap-4">
-                    <h2 class="text-lg font-medium">14. Governing law</h2>
+                    <h2 class="text-lg font-medium">15. Governing law</h2>
                     <p>This policy follows Dutch law and EU data protection rules.</p>
                 </li>
             </ul>
