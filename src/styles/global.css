@@ -140,9 +140,11 @@
 }
 
 .hero-gradient {
-    background: linear-gradient(67deg, #480B1D 0%, #000 27.14%, #000 79.04%, #042B3F 99.54%);
-    background-size: 105% 105%;
-    animation: heroGradientAnimation 5s ease infinite;
+    background: linear-gradient(67deg, rgba(72, 11, 29, 0.25) 0%, rgba(0,0,0,0) 27.14%, rgba(0,0,0,0) 79.04%, rgba(4, 43, 63, 0.25) 99.54%), url('/src/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*animation: heroGradientAnimation 5s ease infinite;*/
 }
 
 @keyframes heroGradientAnimation {
