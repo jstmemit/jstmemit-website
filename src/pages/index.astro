@@ -3,12 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../sections/HeroSection.astro";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import CustomizeYourExperienceSection from "../sections/CustomizeYourExperienceSection.astro";
+import WhatIsJstmemit from "../sections/WhatIsJstmemit.jsx";
 import ItJustDoesntGetOldSection from "../sections/ItJustDoesntGetOldSection.astro";
 import InviteLineSection from "../sections/InviteLineSection.astro";
 ---
 
 <BaseLayout>
 	<HeroSection />
+	<WhatIsJstmemit client:load />
 	<ContentLayout>
 		<CustomizeYourExperienceSection />
 		<ItJustDoesntGetOldSection />

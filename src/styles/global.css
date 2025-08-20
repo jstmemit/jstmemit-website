@@ -7,7 +7,12 @@
 @theme {
     --font-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
+    --color-magenta-400: #FF6F8E;
     --color-magenta-500: #FF4473;
+    --color-magenta-600: #FF2B5C;
+    --color-magenta-700: #b81e42;
+    --color-magenta-800: #86162f;
+    --color-magenta-900: #600f23;
 
     --color-ash-gray: #202024;
 
@@ -159,6 +164,11 @@
     }
 }
 
-.content-gradient {
-    background: linear-gradient(93deg, rgba(64, 10, 26, 0.20) 0%, rgba(0, 0, 0, 0.20) 99.47%), #161619;
+.content-gradient-darker {
+    background: linear-gradient(93deg, rgba(17, 3, 7, 0.2) 0%, rgba(0, 0, 0, 0.20) 99.47%), #0f0c0c;
 }
+
+.content-gradient {
+    background: linear-gradient(93deg, rgba(24, 4, 10, 0.2) 0%, rgba(0, 0, 0, 0.20) 99.47%), #151111;
+}
+
