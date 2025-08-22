@@ -12,6 +12,7 @@
     "@astrojs/node": "^9.2.2",
     "@astrojs/react": "^4.2.7",
     "@astrojs/sitemap": "^3.4.1",
+    "@lucide/astro": "^0.541.0",
     "@playform/compress": "^0.2.0",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-popover": "^1.1.14",

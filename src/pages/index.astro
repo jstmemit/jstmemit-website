@@ -6,13 +6,21 @@ import CustomizeYourExperienceSection from "../sections/CustomizeYourExperienceS
 import WhatIsJstmemit from "../sections/WhatIsJstmemit.jsx";
 import ItJustDoesntGetOldSection from "../sections/ItJustDoesntGetOldSection.astro";
 import InviteLineSection from "../sections/InviteLineSection.astro";
+import HowItWorks from "../sections/HowItWorks.astro";
 ---
 
 <BaseLayout>
 	<HeroSection />
-	<WhatIsJstmemit client:load />
+	<ContentLayout background="content-gradient-darker">
+		<WhatIsJstmemit client:load />
+	</ContentLayout>
+	<ContentLayout>
+		<HowItWorks />
+	</ContentLayout>
 	<ContentLayout>
 		<CustomizeYourExperienceSection />
+	</ContentLayout>
+	<ContentLayout>
 		<ItJustDoesntGetOldSection />
 	</ContentLayout>
 	<InviteLineSection />
