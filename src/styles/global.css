@@ -145,7 +145,7 @@
 }
 
 .hero-gradient {
-    background: linear-gradient(67deg, rgba(72, 11, 29, 0.25) 0%, rgba(0,0,0,0) 27.14%, rgba(0,0,0,0) 79.04%, rgba(4, 43, 63, 0.25) 99.54%), url('/src/assets/images/background.png');
+    background: linear-gradient(67deg, rgba(72, 11, 29, 0.25) 0%, rgba(0,0,0,0) 27.14%, rgba(0,0,0,0) 79.04%, rgba(4, 43, 63, 0.25) 99.54%), url('https://wideunits.nl/cdn-cgi/image/quality=medium,format=auto/https://files.wideunits.nl/jstmemit/images/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -43,7 +43,7 @@ const WhatIsJstmemit = () => {
     ];
 
     return (
-        <section className="content-gradient-darker sm:p-8 py-12 px-0 md:p-8 md:py-16">
+        <section>
             <div className="flex flex-col align-center justify-center w-full max-w-[85vw] md:max-w-7xl text-white mx-auto gap-4 text-center">
                 <FlipWords
                     words={words}
