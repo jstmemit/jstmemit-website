@@ -44,7 +44,7 @@ const WhatIsJstmemit = () => {
 
     return (
         <section>
-            <div className="flex flex-col align-center justify-center w-full max-w-[85vw] md:max-w-7xl text-white mx-auto gap-4 text-center">
+            <div className="flex flex-col align-center justify-center w-full text-white mx-auto gap-4 text-center">
                 <FlipWords
                     words={words}
                     icons={[PartyPopper, AudioLines, Zap, Flame]}
@@ -57,7 +57,7 @@ const WhatIsJstmemit = () => {
                 <p className="text-gray-paragraph text-md md:text-lg tracking-wide">
                     Is it just another bot for making memes? No, it's much more than your typical <span className="text-white">"meme generator"</span>
                 </p>
-                <BentoGrid className="w-full md:px-8 mx-auto mt-3">
+                <BentoGrid className="w-full mt-3">
                     {items.map((item, i) => (
                         <BentoGridItem
                             key={i}
