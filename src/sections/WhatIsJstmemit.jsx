@@ -57,7 +57,7 @@ const WhatIsJstmemit = () => {
                 <p className="text-gray-paragraph text-md md:text-lg tracking-wide">
                     Is it just another bot for making memes? No, it's much more than your typical <span className="text-white">"meme generator"</span>
                 </p>
-                <BentoGrid className="w-full px-8 mx-auto mt-3">
+                <BentoGrid className="w-full md:px-8 mx-auto mt-3">
                     {items.map((item, i) => (
                         <BentoGridItem
                             key={i}

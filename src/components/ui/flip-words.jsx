@@ -47,7 +47,7 @@ export const FlipWords = ({
                         opacity: { ease: "linear" }
                     }}
                     className={cn(
-                        "inline-flex items-center gap-2 text-white px-4 py-2 rounded-full whitespace-nowrap",
+                        "inline-flex items-center gap-2 text-white px-4 py-2 rounded-full whitespace-nowrap hover:scale-105 ease-out select-none",
                         currentBackgroundColor,
                         className
                     )}
