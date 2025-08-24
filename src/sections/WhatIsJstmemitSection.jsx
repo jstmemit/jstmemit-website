@@ -8,8 +8,8 @@ const WhatIsJstmemitSection = () => {
     const words = [
         "Meme generation",
         "Text-to-speech",
-        "AI News",
-        "Profile roasting",
+        // "AI News",
+        // "Profile roasting",
     ];
 
     const items = [
