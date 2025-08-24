@@ -8,6 +8,8 @@ import userimages from "@/assets/icons/userimages.svg"
 import { Image } from "astro:assets"
 import Advantage from "../components/Advantage.astro";
 
+import { Lens } from "../components/ui/lens";
+
 const content = {
     advantages: [
         {
@@ -26,12 +28,14 @@ const content = {
 const { advantages } = content;
 ---
 
-<section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 md:mt-20">
+<section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 md:my-20">
     <div class="w-[100%] md:w-[60%] order-1 md:order-0">
-        <Image class="select-none pointer-events-none" src={englishMemes} alt="Settings command menu" />
+        <Lens lensSize={650} client:load>
+            <Image class="select-none pointer-events-none" src={englishMemes} alt="Settings command menu" />
+        </Lens>
     </div>
     <div class="flex flex-col gap-4">
-        <h2 class="text-3xl md:text-5xl font-bold">IT JUST DOESN’T <br>GET <span class="text-magenta-500">OLD</span></h2>
+        <h2 class="text-3xl md:text-5xl font-bold w-full text-center md:text-left">IT JUST DOESN’T <br>GET <span class="text-magenta-500">OLD</span></h2>
         <p class="text-gray-paragraph text-xl leading-9">
             <span>Discussing an event? Get ready to see memes about it immediately</span>
         </p>

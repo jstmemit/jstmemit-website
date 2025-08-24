@@ -7,7 +7,12 @@
 @theme {
     --font-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
+    --color-magenta-400: #FF6F8E;
     --color-magenta-500: #FF4473;
+    --color-magenta-600: #FF2B5C;
+    --color-magenta-700: #b81e42;
+    --color-magenta-800: #86162f;
+    --color-magenta-900: #600f23;
 
     --color-ash-gray: #202024;
 
@@ -140,9 +145,11 @@
 }
 
 .hero-gradient {
-    background: linear-gradient(67deg, #480B1D 0%, #000 27.14%, #000 79.04%, #042B3F 99.54%);
-    background-size: 105% 105%;
-    animation: heroGradientAnimation 5s ease infinite;
+    background: linear-gradient(67deg, rgba(72, 11, 29, 0.25) 0%, rgba(0,0,0,0) 27.14%, rgba(0,0,0,0) 79.04%, rgba(4, 43, 63, 0.25) 99.54%), url('https://wideunits.nl/cdn-cgi/image/quality=medium,format=auto/https://files.wideunits.nl/jstmemit/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*animation: heroGradientAnimation 5s ease infinite;*/
 }
 
 @keyframes heroGradientAnimation {
@@ -157,6 +164,11 @@
     }
 }
 
-.content-gradient {
-    background: linear-gradient(93deg, rgba(64, 10, 26, 0.20) 0%, rgba(0, 0, 0, 0.20) 99.47%), #161619;
+.content-gradient-darker {
+    background: linear-gradient(93deg, rgba(17, 3, 7, 0.2) 0%, rgba(0, 0, 0, 0.20) 99.47%), #0f0c0c;
 }
+
+.content-gradient {
+    background: linear-gradient(93deg, rgba(24, 4, 10, 0.2) 0%, rgba(0, 0, 0, 0.20) 99.47%), #151111;
+}
+
