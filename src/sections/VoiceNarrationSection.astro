@@ -1,0 +1,38 @@
+---
+import VoicePreview from '../components/VoicePreview.jsx';
+
+const voices = [
+    { name: '🤠 Cowboy', link: 'https://files.wideunits.nl/jstmemit/voices/cowboy.mp3', mobile: true },
+    { name: '📺 Liam', link: 'https://files.wideunits.nl/jstmemit/voices/liam.mp3' },
+    { name: '🎅 Santa', link: 'https://files.wideunits.nl/jstmemit/voices/santa.mp3' },
+    { name: '😀 Sarah', link: 'https://files.wideunits.nl/jstmemit/voices/sarah.mp3', mobile: true },
+    { name: '🎮 Sapphire', link: 'https://files.wideunits.nl/jstmemit/voices/sapphire.mp3' },
+    { name: '💻 Ruhaan', link: 'https://files.wideunits.nl/jstmemit/voices/ruhaan.mp3' },
+    { name: '🥖 Siwis', link: 'https://files.wideunits.nl/jstmemit/voices/siwis.mp3' },
+    { name: '📺 Brad', link: 'https://files.wideunits.nl/jstmemit/voices/brad.mp3', mobile: true },
+    { name: '☁️  Whispering', link: 'https://files.wideunits.nl/jstmemit/voices/Whispering.mp3' },
+    { name: '😀 Xiao Xiao', link: 'https://files.wideunits.nl/jstmemit/voices/xiaoxiao.mp3' },
+    { name: '🙄 Lily', link: 'https://files.wideunits.nl/jstmemit/voices/lily.mp3' },
+    { name: '👴 Grandpa', link: 'https://files.wideunits.nl/jstmemit/voices/grandpa.mp3' },
+    { name: '💻 Jessica', link: 'https://files.wideunits.nl/jstmemit/voices/jessica.mp3' },
+    { name: '🤔 Yunxia', link: 'https://files.wideunits.nl/jstmemit/voices/yunxia.mp3', mobile: true },
+    { name: '🤕 Alex', link: 'https://files.wideunits.nl/jstmemit/voices/alex.mp3' },
+    { name: '😯 Stutter', link: 'https://files.wideunits.nl/jstmemit/voices/stutter.mp3', mobile: true},
+]
+---
+
+<section class="flex flex-col items-center gap-8">
+    <div class="w-full gap-4 flex flex-col items-center text-center">
+        <h2 class="text-white text-3xl md:text-5xl font-bold uppercase"><span class="text-magenta-500">NEW! </span>Text-to-speech</h2>
+        <p class="text-gray-paragraph text-md md:text-lg tracking-wide md:w-[70%]">
+            You can narrate any text with an array of realistic voices that have different accents or styles. No limits and it's free to use. Use <span class="font-mono bg-ash-gray p-1 rounded-full px-2 text-magenta-500">/voice</span> command to get started!
+        </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+        {voices.map((voice) => (
+            <VoicePreview client:load link={voice.link} title={voice.name} mobile={voice.mobile} />
+        ))}
+        <p class="block w-full text-center font-medium md:hidden">...And many more!</p>
+    </div>
+
+</section>

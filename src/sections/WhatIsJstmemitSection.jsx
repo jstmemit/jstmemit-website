@@ -3,7 +3,7 @@ import {FlipWords} from "@/components/ui/flip-words.jsx";
 import { PartyPopper, AudioLines, Zap, Flame } from "lucide-react";
 import {BentoGrid, BentoGridItem} from "@/components/ui/bento-grid.jsx";
 
-const WhatIsJstmemit = () => {
+const WhatIsJstmemitSection = () => {
 
     const words = [
         "Meme generation",
@@ -74,4 +74,4 @@ const WhatIsJstmemit = () => {
     );
 };
 
-export default WhatIsJstmemit;
+export default WhatIsJstmemitSection;
