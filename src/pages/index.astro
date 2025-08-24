@@ -2,12 +2,12 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../sections/HeroSection.astro";
 import ContentLayout from "../layouts/ContentLayout.astro";
-import CustomizeYourExperienceSection from "../sections/CustomizeYourExperienceSection.astro";
 import WhatIsJstmemitSection from "../sections/WhatIsJstmemitSection.jsx";
 import ItJustDoesntGetOldSection from "../sections/ItJustDoesntGetOldSection.astro";
 import InviteLineSection from "../sections/InviteLineSection.astro";
 import HowItWorksSection from "../sections/HowItWorksSection.astro";
 import VoiceNarrationSection from "../sections/VoiceNarrationSection.astro";
+import ReviewsSection from "../sections/ReviewsSection.astro";
 ---
 
 <BaseLayout>
@@ -19,13 +19,13 @@ import VoiceNarrationSection from "../sections/VoiceNarrationSection.astro";
 		<VoiceNarrationSection />
 	</ContentLayout>
 	<ContentLayout background="content-gradient-darker">
+		<ItJustDoesntGetOldSection />
+	</ContentLayout>
+	<ContentLayout>
 		<HowItWorksSection />
 	</ContentLayout>
-	<ContentLayout>
-		<CustomizeYourExperienceSection />
-	</ContentLayout>
-	<ContentLayout>
-		<ItJustDoesntGetOldSection />
+	<ContentLayout background="content-gradient-darker">
+		<ReviewsSection />
 	</ContentLayout>
 	<InviteLineSection />
 </BaseLayout>
